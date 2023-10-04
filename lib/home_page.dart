@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
+import 'login_page.dart';
 
 // ignore: camel_case_types
-class login_page extends StatelessWidget {
-  const login_page({super.key});
+class home_page extends StatelessWidget {
+  const home_page({super.key});
 
   @override
 Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff141414),
+      backgroundColor: const Color.fromARGB(255, 255, 0, 0),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Spacer(),
           const Padding(
             padding:  EdgeInsets.fromLTRB(50, 15, 50, 15),
-            child:  Text("Welcome to Story Maker",
+            child:  Text("Welcome to Story Maker\n HOME PAGE",
             textAlign:  TextAlign.center,
             style: TextStyle(
               fontSize: 30,
@@ -30,7 +30,7 @@ Widget build(BuildContext context) {
             child: TextFormField(
               style: const TextStyle(color: Color(0xffFFFFFF)),
               decoration: const InputDecoration(
-                labelText: "Access Code...",
+                labelText: "This is new code...",
                 labelStyle: TextStyle(color: Color(0xffFFFFFF)),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Color.fromARGB(255, 13, 141, 53)),
@@ -50,7 +50,7 @@ Widget build(BuildContext context) {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const home_page(),
+                    builder: (context) => const login_page(),
                   ),
                 );
               },
