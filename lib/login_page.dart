@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import 'user_page.dart';
 
 // ignore: camel_case_types
 class login_page extends StatelessWidget {
@@ -29,22 +29,28 @@ class login_page extends StatelessWidget {
             const Spacer(),
             Padding(
               padding: const EdgeInsets.only(left: 50, right: 50, bottom: 15, top: 50),
-              child: Container(
+              child: SizedBox(
                 height: 45,
                 width: 250,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(25),
-                  border: Border.all(color: const Color(0xFF5100C2)),
-                ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: TextFormField(
                     style: const TextStyle(color: Color(0xFF37004B)),
                     decoration: const InputDecoration(
-                      labelText: "Access Code...",
-                      labelStyle: TextStyle(color: Color(0xFF37004B)),
-                      border: InputBorder.none,
+                      filled: true,
+                      fillColor: Color(0xffFFFFFF),
+                      labelText: "Access Code",
+                      labelStyle: TextStyle(color: Color(0xFF37004B),
+                      backgroundColor: Color(0xffFFFFFF),
+                      fontSize: 18
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Color(0xFF37004B)),
+                        borderRadius: BorderRadius.all(Radius.circular(25))
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Color(0xFF37004B))
+                      )
                     ),
                   ),
                 ),
@@ -60,7 +66,7 @@ class login_page extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const home_page(),
+                        builder: (context) => const user_page(),
                       ),
                     );
                   },
@@ -87,6 +93,7 @@ class login_page extends StatelessWidget {
               fit: BoxFit.cover,
             ),
             const Spacer(),
+            
           ],
         ),
       ),

@@ -21,3 +21,5 @@ flutter:
   assets:
     - assets/loginPageImage.png
     - assets/carrito.jpg
+    - assets/userImage.png
+    - assets/purpleHeart.png
