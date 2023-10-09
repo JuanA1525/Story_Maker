@@ -4,7 +4,53 @@ import 'package:story_maker/login_page.dart';
 
 // ignore: camel_case_types
 class user_page extends StatelessWidget {
-  const user_page({super.key});
+  user_page({super.key});
+
+  final List<Widget> elements = [
+    const Card(
+      color: Color.fromARGB(255, 17, 0, 114),
+      elevation: 15,
+      child: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Text(
+          "Elemento 3",
+          style: TextStyle(
+            fontSize: 16,
+            color: Colors.black,
+          ),
+        ),
+      ),
+    ),
+    const Card(
+      color: Color.fromARGB(255, 17, 0, 114),
+      elevation: 5,
+      child: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Text(
+          "Elemento 3",
+          style: TextStyle(
+            fontSize: 16,
+            color: Colors.black,
+          ),
+        ),
+      ),
+    ),
+    const Card(
+      color: Color.fromARGB(255, 17, 0, 114),
+      elevation: 5,
+      child: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Text(
+          "Elemento 3",
+          style: TextStyle(
+            fontSize: 16,
+            color: Colors.black,
+          ),
+        ),
+      ),
+    ),
+    // Puedes agregar más elementos aquí
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +87,7 @@ class user_page extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(0,35,0,0),
+                    padding: const EdgeInsets.fromLTRB(0,20,0,0),
                     child: Image.asset(
                       'assets/userImage.png', 
                       height: 225, 
@@ -104,7 +150,19 @@ class user_page extends StatelessWidget {
                         ),
                       ),
                     ),
-
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(70,0,70,0),
+                    child: SizedBox(
+                      height: 150,
+                      child: ListView.builder(
+                        scrollDirection: Axis.vertical,
+                        itemCount: elements.length, 
+                        itemBuilder: (BuildContext context, int index) {
+                          return elements[index];
+                        }
+                      ),
+                    ),
                   )
                 ],
               ),

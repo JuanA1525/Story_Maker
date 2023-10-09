@@ -66,7 +66,7 @@ class login_page extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const user_page(),
+                        builder: (context) => user_page(),
                       ),
                     );
                   },
