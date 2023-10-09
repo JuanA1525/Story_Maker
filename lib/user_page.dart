@@ -1,5 +1,5 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:story_maker/login_page.dart';
 
 
 // ignore: camel_case_types
@@ -12,7 +12,6 @@ class user_page extends StatelessWidget {
       backgroundColor: const Color(0xff141414),
       body: Center(
         child: Stack(
-
           children: [
             Positioned(
               top: 0,
@@ -21,7 +20,14 @@ class user_page extends StatelessWidget {
                 padding: const EdgeInsets.all(15.0),
                 child: FloatingActionButton(
                   backgroundColor: const Color(0xFF3A008C),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const login_page(),
+                      ),
+                    );
+                  },
                   child: const Icon(
                     Icons.arrow_back,
                     size: 35,
@@ -34,18 +40,16 @@ class user_page extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Spacer(),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(0,0,0,0),
+                    padding: const EdgeInsets.fromLTRB(0,35,0,0),
                     child: Image.asset(
                       'assets/userImage.png', 
                       height: 225, 
                       width: 225
                       ),
                   ),
-                  const Spacer(),
                   const Padding(
-                    padding: EdgeInsets.fromLTRB(50, 30, 50, 0),
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                     child: Text(
                       "ANDRES BENJUMEA",
                       textAlign: TextAlign.center,
@@ -56,14 +60,13 @@ class user_page extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Spacer(),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: EdgeInsets.all(10),
                           child: Text(
                             "10", 
                             style: TextStyle(
@@ -80,6 +83,28 @@ class user_page extends StatelessWidget {
                         )
                       ],
                     ) 
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Container(
+                      alignment: Alignment.center,
+                      decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(25)),
+                        color: Color(0xFF3A008C),
+                      ),
+                      width: 350,
+                      height: 45,
+                      child: const Text(
+                        "Your Stories...",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Color(0xffFFFFFF),
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+
                   )
                 ],
               ),
