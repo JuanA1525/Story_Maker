@@ -9,14 +9,19 @@ class home_page extends StatelessWidget {
   @override
 Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 255, 0, 0),
+      backgroundColor: const Color(0xff141414),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Spacer(),
           const Padding(
-            padding:  EdgeInsets.fromLTRB(50, 15, 50, 15),
-            child:  Text("Welcome to Story Maker\n HOME PAGE",
+            padding:  EdgeInsets.only(
+              left: 50,
+              right: 50,
+              top: 50,
+              bottom: 15
+            ),
+            child:  Text("Welcome to\n HOME PAGE",
             textAlign:  TextAlign.center,
             style: TextStyle(
               fontSize: 30,
@@ -26,7 +31,7 @@ Widget build(BuildContext context) {
           ),
           const Spacer(),
           Padding(
-            padding: const EdgeInsets.all(50),
+            padding: const EdgeInsets.all(25),
             child: TextFormField(
               style: const TextStyle(color: Color(0xffFFFFFF)),
               decoration: const InputDecoration(
@@ -42,34 +47,42 @@ Widget build(BuildContext context) {
               ),
             ),
           ),
-          SizedBox(
-            height: 50,
-            width: 150,
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const login_page(),
+          Padding(
+            padding: const EdgeInsets.all(0),
+            child: SizedBox(
+              height: 50,
+              width: 150,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const login_page(),
+                    ),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  shadowColor: const Color(0xffFFFFFF),
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(25))
                   ),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                shadowColor: const Color(0xffFFFFFF),
-                shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(25))
+                  backgroundColor: const Color(0xff0d8d35)
+                  ),
+                  child: const Text(
+                    "Ingresar",
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Color(0xffFFFFFF)
+                    )
                 ),
-                backgroundColor: const Color(0xff0d8d35)
-                ),
-                child: const Text(
-                  "Ingresar",
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Color(0xffFFFFFF)
-                  )
-              ),
-            )
-            
+              )
+              
+            ),
+          ),
+          Image.asset(
+            'assets/carrito.jpg',
+            height: 300,
+            width: 350,
           ),
           const Spacer(),
         ],
