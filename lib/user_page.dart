@@ -7,11 +7,64 @@ class user_page extends StatelessWidget {
   user_page({super.key});
 
   final List<Widget> elements = [
+     Padding(
+       padding: const EdgeInsets.all(8.0),
+       child: Card(
+        color: const Color.fromARGB(255, 17, 0, 114),
+        elevation: 5,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20.0)
+        ),
+        child:  ClipRRect(
+          borderRadius: BorderRadius.circular(20.0),
+          child: Container(
+            width: 100,
+            height: 100,
+            alignment: Alignment.center,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Color.fromARGB(255, 15, 1, 97), Color.fromARGB(255, 38, 0, 255)]
+              )
+            ),
+            child: const Stack(
+              children: [
+                Positioned(
+                  right: 10,
+                  bottom: 10,
+                  child: Padding(
+                    padding: EdgeInsets.all(00.0),
+                    child: Icon(
+                      Icons.favorite,
+                      color: Color.fromARGB(255, 105, 0, 252),
+                      size: 35,
+                    )
+                  ),
+                ),
+                Center(
+                  child: Padding(
+                    padding: EdgeInsets.all(15.0),
+                    child: Text(
+                      "Elemento 1",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )
+          ),
+        ),
+         ),
+     ),
     const Card(
       color: Color.fromARGB(255, 17, 0, 114),
-      elevation: 15,
+      elevation: 5,
       child: Padding(
-        padding: EdgeInsets.all(8.0),
+        padding: EdgeInsets.all(20),
         child: Text(
           "Elemento 3",
           style: TextStyle(
@@ -25,21 +78,7 @@ class user_page extends StatelessWidget {
       color: Color.fromARGB(255, 17, 0, 114),
       elevation: 5,
       child: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Text(
-          "Elemento 3",
-          style: TextStyle(
-            fontSize: 16,
-            color: Colors.black,
-          ),
-        ),
-      ),
-    ),
-    const Card(
-      color: Color.fromARGB(255, 17, 0, 114),
-      elevation: 5,
-      child: Padding(
-        padding: EdgeInsets.all(8.0),
+        padding: EdgeInsets.all(20),
         child: Text(
           "Elemento 3",
           style: TextStyle(
@@ -106,13 +145,13 @@ class user_page extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  const Padding(
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Padding(
-                          padding: EdgeInsets.all(10),
+                         Padding(
+                          padding: EdgeInsets.all(5),
                           child: Text(
                             "10", 
                             style: TextStyle(
@@ -122,10 +161,10 @@ class user_page extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Image.asset(
-                          'assets/purpleHeart.png', 
-                          height: 30, 
-                          width: 30
+                        Icon(
+                          Icons.favorite,
+                          color: Color.fromARGB(255, 86, 0, 206),
+                          size: 35,
                         )
                       ],
                     ) 
@@ -152,7 +191,7 @@ class user_page extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(70,0,70,0),
+                    padding: const EdgeInsets.fromLTRB(65,0,65,0),
                     child: SizedBox(
                       height: 150,
                       child: ListView.builder(
