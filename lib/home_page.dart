@@ -9,7 +9,7 @@ class home_page extends StatelessWidget {
   @override
 Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff141414),
+      backgroundColor: const Color(0xFF141414),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -47,42 +47,34 @@ Widget build(BuildContext context) {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(0),
-            child: SizedBox(
-              height: 50,
-              width: 150,
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const login_page(),
-                    ),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  shadowColor: const Color(0xffFFFFFF),
-                  shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(25))
+          SizedBox(
+            height: 50,
+            width: 150,
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const login_page(),
                   ),
-                  backgroundColor: const Color(0xff0d8d35)
-                  ),
-                  child: const Text(
-                    "Ingresar",
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Color(0xffFFFFFF)
-                    )
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                shadowColor: const Color(0xffFFFFFF),
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(25))
                 ),
-              )
-              
-            ),
-          ),
-          Image.asset(
-            'assets/carrito.jpg',
-            height: 300,
-            width: 350,
+                backgroundColor: const Color(0xff0d8d35)
+                ),
+                child: const Text(
+                  "Volver",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Color(0xffFFFFFF)
+                  )
+              ),
+            )
+            
           ),
           const Spacer(),
         ],
