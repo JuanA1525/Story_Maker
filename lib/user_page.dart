@@ -7,9 +7,9 @@ class user_page extends StatelessWidget {
   user_page({super.key});
 
   final List<Widget> elements = [
-     Padding(
-       padding: const EdgeInsets.all(8.0),
-       child: Card(
+    Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Card(
         color: const Color.fromARGB(255, 17, 0, 114),
         elevation: 5,
         shape: RoundedRectangleBorder(
@@ -33,57 +33,219 @@ class user_page extends StatelessWidget {
                 Positioned(
                   right: 10,
                   bottom: 10,
-                  child: Padding(
-                    padding: EdgeInsets.all(00.0),
-                    child: Icon(
-                      Icons.favorite,
-                      color: Color.fromARGB(255, 105, 0, 252),
-                      size: 35,
-                    )
-                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                        Padding(
+                        padding: EdgeInsets.all(3),
+                        child: Text(
+                          "54", 
+                          style: TextStyle(
+                            fontSize: 20, 
+                            color: Color(0xffFFFFFF),
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ),
+                      Icon(
+                        Icons.favorite,
+                        color: Color.fromARGB(255, 86, 0, 206),
+                        size: 25,
+                      )
+                    ],
+                  ) 
                 ),
                 Center(
-                  child: Padding(
-                    padding: EdgeInsets.all(15.0),
-                    child: Text(
-                      "Elemento 1",
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.white,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0,0,0,5),
+                        child: Text(
+                          "LOS DOS MUCHACHOS",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
+                        ),
                       ),
-                    ),
+                      Text(
+                        "ANDRES BENJUMEA",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
             )
           ),
         ),
-         ),
-     ),
-    const Card(
-      color: Color.fromARGB(255, 17, 0, 114),
-      elevation: 5,
-      child: Padding(
-        padding: EdgeInsets.all(20),
-        child: Text(
-          "Elemento 3",
-          style: TextStyle(
-            fontSize: 16,
-            color: Colors.black,
+      ),
+    ),
+    Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Card(
+        color: const Color.fromARGB(255, 17, 0, 114),
+        elevation: 5,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20.0)
+        ),
+        child:  ClipRRect(
+          borderRadius: BorderRadius.circular(20.0),
+          child: Container(
+            width: 100,
+            height: 100,
+            alignment: Alignment.center,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Color.fromARGB(255, 15, 1, 97), Color.fromARGB(255, 38, 0, 255)]
+              )
+            ),
+            child: const Stack(
+              children: [
+                Positioned(
+                  right: 10,
+                  bottom: 10,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                        Padding(
+                        padding: EdgeInsets.all(3),
+                        child: Text(
+                          "124", 
+                          style: TextStyle(
+                            fontSize: 20, 
+                            color: Color(0xffFFFFFF),
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ),
+                      Icon(
+                        Icons.favorite,
+                        color: Color.fromARGB(255, 86, 0, 206),
+                        size: 25,
+                      )
+                    ],
+                  ) 
+                ),
+                Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0,0,0,5),
+                        child: Text(
+                          "UN DIA EN EL MUNDO DEL FRONT END",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        "ANDRES BENJUMEA",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            )
           ),
         ),
       ),
     ),
-    const Card(
-      color: Color.fromARGB(255, 17, 0, 114),
-      elevation: 5,
-      child: Padding(
-        padding: EdgeInsets.all(20),
-        child: Text(
-          "Elemento 3",
-          style: TextStyle(
-            fontSize: 16,
-            color: Colors.black,
+    Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Card(
+        color: const Color.fromARGB(255, 17, 0, 114),
+        elevation: 5,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20.0)
+        ),
+        child:  ClipRRect(
+          borderRadius: BorderRadius.circular(20.0),
+          child: Container(
+            width: 100,
+            height: 100,
+            alignment: Alignment.center,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Color.fromARGB(255, 15, 1, 97), Color.fromARGB(255, 38, 0, 255)]
+              )
+            ),
+            child: const Stack(
+              children: [
+                Positioned(
+                  right: 10,
+                  bottom: 10,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                        Padding(
+                        padding: EdgeInsets.all(3),
+                        child: Text(
+                          "37", 
+                          style: TextStyle(
+                            fontSize: 20, 
+                            color: Color(0xffFFFFFF),
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ),
+                      Icon(
+                        Icons.favorite,
+                        color: Color.fromARGB(255, 86, 0, 206),
+                        size: 25,
+                      )
+                    ],
+                  ) 
+                ),
+                Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0,0,0,5),
+                        child: Text(
+                          "FLUTTER PARA ROOKIES",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        "ANDRES BENJUMEA",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            )
           ),
         ),
       ),
@@ -170,7 +332,7 @@ class user_page extends StatelessWidget {
                     ) 
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(15.0),
+                    padding: const EdgeInsets.all(10),
                     child: Container(
                       alignment: Alignment.center,
                       decoration: const BoxDecoration(
@@ -193,7 +355,7 @@ class user_page extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(65,0,65,0),
                     child: SizedBox(
-                      height: 150,
+                      height: 250,
                       child: ListView.builder(
                         scrollDirection: Axis.vertical,
                         itemCount: elements.length, 
