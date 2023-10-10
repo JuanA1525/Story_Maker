@@ -4,248 +4,281 @@ import 'package:story_maker/login_page.dart';
 
 // ignore: camel_case_types
 class user_page extends StatelessWidget {
-  user_page({super.key});
+  const user_page({super.key});
 
-  final List<Widget> elements = [
+  @override
+  Widget build(BuildContext context) {
+
+    final List<Widget> elements = [
     Padding(
       padding: const EdgeInsets.all(5.0),
-      child: Card(
-        color: const Color.fromARGB(255, 17, 0, 114),
-        elevation: 5,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20.0)
-        ),
-        child:  ClipRRect(
-          borderRadius: BorderRadius.circular(20.0),
-          child: Container(
-            width: 100,
-            height: 100,
-            alignment: Alignment.center,
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Color.fromARGB(255, 15, 1, 97), Color.fromARGB(255, 38, 0, 255)]
-              )
+      child: InkWell(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const login_page(),
             ),
-            child: const Stack(
-              children: [
-                Positioned(
-                  right: 10,
-                  bottom: 10,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                        Padding(
-                        padding: EdgeInsets.all(3),
-                        child: Text(
-                          "54", 
-                          style: TextStyle(
-                            fontSize: 20, 
-                            color: Color(0xffFFFFFF),
-                            fontWeight: FontWeight.bold
+          );
+        },
+        child: Card(
+          color: const Color.fromARGB(255, 17, 0, 114),
+          elevation: 5,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0)
+          ),
+          child:  ClipRRect(
+            borderRadius: BorderRadius.circular(20.0),
+            child: Container(
+              width: 100,
+              height: 100,
+              alignment: Alignment.center,
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Color.fromARGB(255, 15, 1, 97), Color.fromARGB(255, 38, 0, 255)]
+                )
+              ),
+              child: const Stack(
+                children: [
+                  Positioned(
+                    right: 10,
+                    bottom: 10,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                          Padding(
+                          padding: EdgeInsets.all(3),
+                          child: Text(
+                            "54", 
+                            style: TextStyle(
+                              fontSize: 20, 
+                              color: Color(0xffFFFFFF),
+                              fontWeight: FontWeight.bold
+                            ),
                           ),
                         ),
-                      ),
-                      Icon(
-                        Icons.favorite,
-                        color: Color.fromARGB(255, 86, 0, 206),
-                        size: 25,
-                      )
-                    ],
-                  ) 
-                ),
-                Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(0,0,0,5),
-                        child: Text(
-                          "LOS DOS MUCHACHOS",
+                        Icon(
+                          Icons.favorite,
+                          color: Color.fromARGB(255, 86, 0, 206),
+                          size: 25,
+                        )
+                      ],
+                    ) 
+                  ),
+                  Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(0,0,0,5),
+                          child: Text(
+                            "LOS DOS MUCHACHOS",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          "ANDRES BENJUMEA",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                            fontSize: 14,
                             color: Colors.white,
                           ),
                         ),
-                      ),
-                      Text(
-                        "ANDRES BENJUMEA",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ],
-            )
+                ],
+              )
+            ),
           ),
         ),
       ),
     ),
     Padding(
       padding: const EdgeInsets.all(5.0),
-      child: Card(
-        color: const Color.fromARGB(255, 17, 0, 114),
-        elevation: 5,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20.0)
-        ),
-        child:  ClipRRect(
-          borderRadius: BorderRadius.circular(20.0),
-          child: Container(
-            width: 100,
-            height: 100,
-            alignment: Alignment.center,
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Color.fromARGB(255, 15, 1, 97), Color.fromARGB(255, 38, 0, 255)]
-              )
+      child: InkWell(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const login_page(),
             ),
-            child: const Stack(
-              children: [
-                Positioned(
-                  right: 10,
-                  bottom: 10,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                        Padding(
-                        padding: EdgeInsets.all(3),
-                        child: Text(
-                          "124", 
-                          style: TextStyle(
-                            fontSize: 20, 
-                            color: Color(0xffFFFFFF),
-                            fontWeight: FontWeight.bold
+          );
+        },
+        child: Card(
+          color: const Color.fromARGB(255, 17, 0, 114),
+          elevation: 5,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0)
+          ),
+          child:  ClipRRect(
+            borderRadius: BorderRadius.circular(20.0),
+            child: Container(
+              width: 100,
+              height: 100,
+              alignment: Alignment.center,
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Color.fromARGB(255, 15, 1, 97), Color.fromARGB(255, 38, 0, 255)]
+                )
+              ),
+              child: const Stack(
+                children: [
+                  Positioned(
+                    right: 10,
+                    bottom: 10,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                          Padding(
+                          padding: EdgeInsets.all(3),
+                          child: Text(
+                            "124", 
+                            style: TextStyle(
+                              fontSize: 20, 
+                              color: Color(0xffFFFFFF),
+                              fontWeight: FontWeight.bold
+                            ),
                           ),
                         ),
-                      ),
-                      Icon(
-                        Icons.favorite,
-                        color: Color.fromARGB(255, 86, 0, 206),
-                        size: 25,
-                      )
-                    ],
-                  ) 
-                ),
-                Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(0,0,0,5),
-                        child: Text(
-                          "UN DIA EN EL MUNDO DEL FRONT END",
+                        Icon(
+                          Icons.favorite,
+                          color: Color.fromARGB(255, 86, 0, 206),
+                          size: 25,
+                        )
+                      ],
+                    ) 
+                  ),
+                  Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(0,0,0,5),
+                          child: Text(
+                            "UN DIA EN EL MUNDO DEL FRONT END",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          "ANDRES BENJUMEA",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                            fontSize: 14,
                             color: Colors.white,
                           ),
                         ),
-                      ),
-                      Text(
-                        "ANDRES BENJUMEA",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ],
-            )
+                ],
+              )
+            ),
           ),
         ),
       ),
     ),
     Padding(
       padding: const EdgeInsets.all(5.0),
-      child: Card(
-        color: const Color.fromARGB(255, 17, 0, 114),
-        elevation: 5,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20.0)
-        ),
-        child:  ClipRRect(
-          borderRadius: BorderRadius.circular(20.0),
-          child: Container(
-            width: 100,
-            height: 100,
-            alignment: Alignment.center,
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Color.fromARGB(255, 15, 1, 97), Color.fromARGB(255, 38, 0, 255)]
-              )
+      child: InkWell(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const login_page(),
             ),
-            child: const Stack(
-              children: [
-                Positioned(
-                  right: 10,
-                  bottom: 10,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                        Padding(
-                        padding: EdgeInsets.all(3),
-                        child: Text(
-                          "37", 
-                          style: TextStyle(
-                            fontSize: 20, 
-                            color: Color(0xffFFFFFF),
-                            fontWeight: FontWeight.bold
+          );
+        },
+        child: Card(
+          color: const Color.fromARGB(255, 17, 0, 114),
+          elevation: 5,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0)
+          ),
+          child:  ClipRRect(
+            borderRadius: BorderRadius.circular(20.0),
+            child: Container(
+              width: 100,
+              height: 100,
+              alignment: Alignment.center,
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Color.fromARGB(255, 15, 1, 97), Color.fromARGB(255, 38, 0, 255)]
+                )
+              ),
+              child: const Stack(
+                children: [
+                  Positioned(
+                    right: 10,
+                    bottom: 10,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                          Padding(
+                          padding: EdgeInsets.all(3),
+                          child: Text(
+                            "37", 
+                            style: TextStyle(
+                              fontSize: 20, 
+                              color: Color(0xffFFFFFF),
+                              fontWeight: FontWeight.bold
+                            ),
                           ),
                         ),
-                      ),
-                      Icon(
-                        Icons.favorite,
-                        color: Color.fromARGB(255, 86, 0, 206),
-                        size: 25,
-                      )
-                    ],
-                  ) 
-                ),
-                Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(0,0,0,5),
-                        child: Text(
-                          "FLUTTER PARA ROOKIES",
+                        Icon(
+                          Icons.favorite,
+                          color: Color.fromARGB(255, 86, 0, 206),
+                          size: 25,
+                        )
+                      ],
+                    ) 
+                  ),
+                  Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(0,0,0,5),
+                          child: Text(
+                            "FLUTTER PARA ROOKIES",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          "ANDRES BENJUMEA",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                            fontSize: 14,
                             color: Colors.white,
                           ),
                         ),
-                      ),
-                      Text(
-                        "ANDRES BENJUMEA",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ],
-            )
+                ],
+              )
+            ),
           ),
         ),
       ),
@@ -253,8 +286,6 @@ class user_page extends StatelessWidget {
     // Puedes agregar más elementos aquí
   ];
 
-  @override
-  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff141414),
       body: Center(
