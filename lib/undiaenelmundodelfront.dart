@@ -112,9 +112,9 @@ class undiaenelmundodelfront extends StatelessWidget {
                                 Padding(
                                   padding: EdgeInsets.all(5),
                                   child: Text(
-                                    "Andres Benjumea",
+                                    "JUAN PORRAS",
                                     style: TextStyle(
-                                        fontSize: 25,
+                                        fontSize: 20,
                                         color: Color(0xffFFFFFF),
                                         fontWeight: FontWeight.bold),
                                   ),
@@ -129,9 +129,9 @@ class undiaenelmundodelfront extends StatelessWidget {
                                 Padding(
                                   padding: EdgeInsets.all(5),
                                   child: Text(
-                                    "10",
+                                    "14",
                                     style: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: 23,
                                         color: Color(0xffFFFFFF),
                                         fontWeight: FontWeight.bold),
                                   ),
@@ -139,7 +139,7 @@ class undiaenelmundodelfront extends StatelessWidget {
                                 Icon(
                                   Icons.favorite,
                                   color: Color.fromARGB(255, 86, 0, 206),
-                                  size: 20,
+                                  size: 23,
                                 )
                               ],
                             )),

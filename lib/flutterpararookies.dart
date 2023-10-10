@@ -90,7 +90,7 @@ class flutterpararookies extends StatelessWidget {
                         Padding(
                             padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
                             child: GradientText(
-                              text: "UN DIA EN EL MUNDO DEL FRONT END",
+                              text: "FLUTTER PARA ROOKIES",
                               gradient: LinearGradient(
                                 colors: [
                                   Color(0xFF4FB9FF),
@@ -112,9 +112,9 @@ class flutterpararookies extends StatelessWidget {
                                 Padding(
                                   padding: EdgeInsets.all(5),
                                   child: Text(
-                                    "Andres Benjumea",
+                                    "ANDRES BENJUMEA",
                                     style: TextStyle(
-                                        fontSize: 25,
+                                        fontSize: 20,
                                         color: Color(0xffFFFFFF),
                                         fontWeight: FontWeight.bold),
                                   ),
@@ -129,9 +129,9 @@ class flutterpararookies extends StatelessWidget {
                                 Padding(
                                   padding: EdgeInsets.all(5),
                                   child: Text(
-                                    "10",
+                                    "37",
                                     style: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: 23,
                                         color: Color(0xffFFFFFF),
                                         fontWeight: FontWeight.bold),
                                   ),
@@ -139,7 +139,7 @@ class flutterpararookies extends StatelessWidget {
                                 Icon(
                                   Icons.favorite,
                                   color: Color.fromARGB(255, 86, 0, 206),
-                                  size: 20,
+                                  size: 23,
                                 )
                               ],
                             )),
