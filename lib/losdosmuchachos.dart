@@ -77,7 +77,6 @@ class losdosmuchachos extends StatelessWidget {
                     ],
                   )),
             ),
-            //---------------------BOTON FLOTANTE DE LIKE---------------------
 
             //---------------------BODY DE LA PAGINA---------------------
             Center(
