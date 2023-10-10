@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:story_maker/login_page.dart';
-import 'package:story_maker/flutterpararookies.dart';
-import 'package:story_maker/undiaenelmundodelfront.dart';
-import 'package:story_maker/losdosmuchachos.dart';
+import 'package:story_maker/LoginPage.dart';
+import 'package:story_maker/FlutterParaRookies.dart';
+import 'package:story_maker/UnDiaEnElMundoDelFront.dart';
+import 'package:story_maker/LosDosMuchachos.dart';
 
 
 // ignore: camel_case_types
@@ -20,7 +20,7 @@ class user_page extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const losdosmuchachos(),
+              builder: (context) => const LosDosMuchachos(),
             ),
           );
         },
@@ -111,7 +111,7 @@ class user_page extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const undiaenelmundodelfront(),
+              builder: (context) => const UnDiaEnElMundoDelFront(),
             ),
           );
         },
@@ -202,7 +202,7 @@ class user_page extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const flutterpararookies(),
+              builder: (context) => const FlutterParaRookies(),
             ),
           );
         },

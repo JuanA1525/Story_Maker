@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'user_page.dart';
-
+import 'package:story_maker/UserPage.dart';
 // ignore: camel_case_types
 class login_page extends StatelessWidget {
   // ignore: use_key_in_widget_constructors
