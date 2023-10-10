@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'user_page.dart';
-import 'package:story_maker/login_page.dart';
-import 'package:story_maker/story_page.dart';
-import 'package:story_maker/losdosmuchachos.dart';
 
 // ignore: camel_case_types
 class login_page extends StatelessWidget {

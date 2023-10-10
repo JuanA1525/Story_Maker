@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:story_maker/login_page.dart';
-import 'package:story_maker/story_page.dart';
+import 'package:story_maker/flutterpararookies.dart';
+import 'package:story_maker/undiaenelmundodelfront.dart';
 import 'package:story_maker/losdosmuchachos.dart';
 
 
@@ -110,7 +111,7 @@ class user_page extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const story_page(),
+              builder: (context) => const undiaenelmundodelfront(),
             ),
           );
         },
@@ -201,7 +202,7 @@ class user_page extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const story_page(),
+              builder: (context) => const flutterpararookies(),
             ),
           );
         },
