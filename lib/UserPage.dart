@@ -178,7 +178,7 @@ class user_page extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          "JUAN PORRAS",
+                          "ANDRES BENJUMEA",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 14,
