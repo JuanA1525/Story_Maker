@@ -53,7 +53,7 @@ class flutterpararookies extends StatelessWidget {
                               "M",
                               style: TextStyle(
                                   fontSize: 34,
-                                  color: Color(0xFF3A008C),
+                                  color: Color(0xFF6A00FF),
                                   fontWeight: FontWeight.bold),
                             ),
                           ],

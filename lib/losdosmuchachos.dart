@@ -53,7 +53,7 @@ class losdosmuchachos extends StatelessWidget {
                               "M",
                               style: TextStyle(
                                   fontSize: 34,
-                                  color: Color(0xFF3A008C),
+                                  color: Color.fromRGBO(106, 0, 255, 1),
                                   fontWeight: FontWeight.bold),
                             ),
                           ],
