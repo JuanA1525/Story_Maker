@@ -54,7 +54,7 @@ class user_page extends StatelessWidget {
                           child: Text(
                             "54", 
                             style: TextStyle(
-                              fontSize: 20, 
+                              fontSize: 15, 
                               color: Color(0xffFFFFFF),
                               fontWeight: FontWeight.bold
                             ),
@@ -63,7 +63,7 @@ class user_page extends StatelessWidget {
                         Icon(
                           Icons.favorite,
                           color: Color.fromARGB(255, 86, 0, 206),
-                          size: 25,
+                          size: 15,
                         )
                       ],
                     ) 
@@ -143,9 +143,9 @@ class user_page extends StatelessWidget {
                           Padding(
                           padding: EdgeInsets.all(3),
                           child: Text(
-                            "124", 
+                            "14", 
                             style: TextStyle(
-                              fontSize: 20, 
+                              fontSize: 15, 
                               color: Color(0xffFFFFFF),
                               fontWeight: FontWeight.bold
                             ),
@@ -154,7 +154,7 @@ class user_page extends StatelessWidget {
                         Icon(
                           Icons.favorite,
                           color: Color.fromARGB(255, 86, 0, 206),
-                          size: 25,
+                          size: 15,
                         )
                       ],
                     ) 
@@ -170,7 +170,7 @@ class user_page extends StatelessWidget {
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 18,
+                              fontSize: 16,
                               color: Colors.white,
                             ),
                           ),
@@ -236,7 +236,7 @@ class user_page extends StatelessWidget {
                           child: Text(
                             "37", 
                             style: TextStyle(
-                              fontSize: 20, 
+                              fontSize: 15, 
                               color: Color(0xffFFFFFF),
                               fontWeight: FontWeight.bold
                             ),
@@ -245,7 +245,7 @@ class user_page extends StatelessWidget {
                         Icon(
                           Icons.favorite,
                           color: Color.fromARGB(255, 86, 0, 206),
-                          size: 25,
+                          size: 15,
                         )
                       ],
                     ) 
